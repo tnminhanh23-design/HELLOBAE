@@ -79,27 +79,49 @@ BIRTHDAY LUV
       border-radius: 16px;
       box-shadow: 0 2px 8px #BE598599;
       text-align: center;
+      min-width: 350px;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #special-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    #special-box img {
+      max-width: 90%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px #BE598544;
+    }
+    #special-box h1 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #BE5985;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-shadow: 0 2px 8px #FFEDFA66;
     }
   </style>
 </head>
 <body>
-<div id="privacy-modal">
-  <div id="privacy-modal-content">
-    <div id="special-box">
-      <h1 style="font-size:2.4em; font-weight:bold; color:#BE5985; margin-bottom:10px;">
-        Do you want to know what’s waiting for you?
-      </h1>
-      <!-- Or add an image below:
-      <img src="[(https://bigmoods.com/cdn/shop/products/BM-0001-966.jpg?v=1667599433)](https://i.pinimg.com/1200x/a0/c9/e0/a0c9e0cad28d717ce51a830946d33729.jpg)]" style="max-width:90%; border-radius:12px;">
-      -->
+  <div id="privacy-modal">
+    <div id="privacy-modal-content">
+      <div id="special-box">
+        <img src="https://i.pinimg.com/1200x/a0/c9/e0/a0c9e0cad28d717ce51a830946d33729.jpg" alt="Special Surprise">
+        <h1>Do you want to know what’s waiting for you?</h1>
+      </div>
+      <h2>For My Love Only 💖</h2>
+      <p>Enter your secret code:</p>
+      <input type="password" id="secret-code" placeholder="Your code here">
+      <button onclick="checkCode()">Enter</button>
+      <p id="error-message" style="color:#BE5985"></p>
     </div>
-    <h2>Hello There 💖</h2>
-    <p>Enter your secret code:</p>
-    <input type="password" id="secret-code" placeholder="Your code here">
-    <button onclick="checkCode()">Enter</button>
-    <p id="error-message" style="color:#BE5985"></p>
   </div>
-</div>
   <div class="container" style="display:none;" id="main-content">
     <h1>Happy Birthday, My Love!</h1>
     <div class="love-message">I love you forever! 💖</div>
