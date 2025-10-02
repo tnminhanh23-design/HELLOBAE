@@ -112,7 +112,6 @@ BIRTHDAY LUV
   <div id="privacy-modal">
     <div id="privacy-modal-content">
       <div id="special-box">
-        <img src="https://i.pinimg.com/1200x/a0/c9/e0/a0c9e0cad28d717ce51a830946d33729.jpg" alt="Special Surprise">
         <h1>Do you want to know what’s waiting for you?</h1>
       </div>
       <h2>For My Love Only 💖</h2>
