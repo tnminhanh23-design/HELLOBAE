@@ -83,15 +83,23 @@ BIRTHDAY LUV
   </style>
 </head>
 <body>
-  <div id="privacy-modal">
-    <div id="privacy-modal-content">
-      <h2>For My Love Only 💕</h2>
-      <p>Enter your secret code:</p>
-      <input type="password" id="secret-code" placeholder="Your code here">
-      <button onclick="checkCode()">Enter</button>
-      <p id="error-message" style="color:#BE5985"></p>
+<div id="privacy-modal">
+  <div id="privacy-modal-content">
+    <div id="special-box">
+      <h1 style="font-size:2.4em; font-weight:bold; color:#BE5985; margin-bottom:10px;">
+        Do you want to know what’s waiting for you?
+      </h1>
+      <!-- Or add an image below:
+      <img src="[(https://bigmoods.com/cdn/shop/products/BM-0001-966.jpg?v=1667599433)]" style="max-width:90%; border-radius:12px;">
+      -->
     </div>
+    <h2>Hello There 💖</h2>
+    <p>Enter your secret code:</p>
+    <input type="password" id="secret-code" placeholder="Your code here">
+    <button onclick="checkCode()">Enter</button>
+    <p id="error-message" style="color:#BE5985"></p>
   </div>
+</div>
   <div class="container" style="display:none;" id="main-content">
     <h1>Happy Birthday, My Love!</h1>
     <div class="love-message">I love you forever! 💖</div>
@@ -138,7 +146,7 @@ BIRTHDAY LUV
   </div>
   <script>
     // Change this to your secret code
-    const SECRET = "iloveher";
+    const SECRET = "16102003";
 
     function checkCode() {
       const code = document.getElementById('secret-code').value;
